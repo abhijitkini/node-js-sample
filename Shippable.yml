@@ -4,9 +4,20 @@ node_js:
   - 0.10.33
 
 build:
-  ci: 
-    - echo 'CI Running'
+  pre_ci_boot:
+    image_name: gcr.io/tutorial-145000/sample_node_eb_docker
+    image_tag: latest
+    pull: true
+    options: "-e HOME=/root"     
     
-  on_success:
-  - if [ "$BRANCH" == "master" ]; then git remote add dokku dokku@138.68.46.6:tutorial; fi
-  - if [ "$BRANCH" == "master" ]; then git push dokku master; fi
+  ci: 
+    - docker pull gcr.io/tutorial-145000/sample_node_eb_docker
+    - echo 'CI Running'
+      
+integrations:
+    hub:
+      - integrationName: gcr-int
+        type: gcr
+        branches:
+          only:
+            - master
