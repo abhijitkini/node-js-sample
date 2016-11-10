@@ -9,4 +9,4 @@ env:
 build:    
   ci: 
     - echo $BUILD_NUMBER
-    - echo $env1
+    - echo $env2
