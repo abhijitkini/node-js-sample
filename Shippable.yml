@@ -3,21 +3,6 @@ language: node_js
 node_js:
   - 0.10.33
 
-build:
-  pre_ci_boot:
-    image_name: gcr.io/tutorial-145000/sample_node_eb_docker
-    image_tag: latest
-    pull: true
-    options: "-e HOME=/root"     
-    
+build:    
   ci: 
-    - docker pull gcr.io/tutorial-145000/sample_node_eb_docker
     - echo 'CI Running'
-      
-integrations:
-    hub:
-      - integrationName: gcr-int
-        type: gcr
-        branches:
-          only:
-            - master
