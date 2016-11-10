@@ -9,5 +9,5 @@ env:
 build:    
   ci: 
     - echo 'CI Running'
-    - echo BUILD_NUMBER
-    - echo env1
+    - echo $BUILD_NUMBER
+    - echo $env1
