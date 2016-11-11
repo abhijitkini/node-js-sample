@@ -4,9 +4,8 @@ node_js:
   - 0.10.33
 
 env:
-  - secure: tPeVmEUpxSDmX5IY/SrgpLBTVbhAduJsSf8QsDz5RmSaQ4HSovz8UFCSJJMi0dfQ4U+xNhBnPoNEP2BnHzs0DceTCwt8N41pLQcL3qiBY0gHg2qj2cC8TOVN6RDvzo/nkkAbPOAVn5vPA4yY1iLpImzBd/8s8mTcAHHd/nvN+YyfeGseqV7eWPfaKBOlVj57xIgt2KT+iZAxhbVcVqmMuE2zeqqrqdFlVGYveCG8p5azJexLSXOF2FOmo8ktoYl1ZMYgpmbG6wghzh4EjoGg3RAGC9AY5sIldgSbWEaht8G5OG/upALDwmNU8iCr/K/mfBNlUvSF3pLxj2aQcAPD/Q==
-
+  - secure: NYt01zPhRh5VyGc+3ArtYofAEVAL1F88lWaWs5Oqz0HuREaJ8bwfyC4LdaC8qLiBIrRQa6pXwf9tESvu33Sd+xL0hJZ8r8OJBi7aXwu1oHpU1GksT2Qs+NbAS2n6gdOXG7xfuVfqOABo9xpWckbD7f08+8arWxrVtLMLf+LmOwXW/FQ0nStKbYeUZ1df/uCrA+QK0/8PTXJLJZAOwAY/XuVwjorBR3zfB/55LDF0WTISc0K05LPBAH8jM6nxGibkqwlWAcsPnr+fofYE9ymHtjIbT3DJwNuJHvfsbLLCxIW6AQtEc3oOfAhDSrnTDJem2i/nyTJP1Refb/pnXh9lkg==
 build:    
   ci: 
     - echo $BUILD_NUMBER
-    - echo $env1
+    - echo $env2
